@@ -13,8 +13,7 @@ import radar
 async def apod(ctx, date=''):
     if date == 'random':
         date = radar.random_datetime(start='1995-06-16', stop=datetime.today().strftime('%Y-%m-%d'))
-
-
+        
     api_key = ""
     api_url = f"https://api.nasa.gov/planetary/apod?api_key={api_key}&date={date}&hd=True"
 
