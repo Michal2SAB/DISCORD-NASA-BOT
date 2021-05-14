@@ -1,5 +1,6 @@
-# DISCORD-NASA-BOT
-A NASA Bot for Discord, written in python. Uses some of Nasa's public apis and more in near future.
+# A NASA Command Bot for Discord, written in python.
+
+Uses some of Nasa's public apis and more in near future. 
 
 # FEATURES FOR NOW
 
