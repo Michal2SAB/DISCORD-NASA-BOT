@@ -24,7 +24,9 @@ async def apod(ctx, date=''):
     theDesc = nasa_dict['explanation']
     theTitle = nasa_dict['title']
     hdUrl = nasa_dict['hdurl']
-    copyrightn = nasa_dict['copyright']
+    copyrightn = ''
+    if 'copyright' in nasa_dict:
+        copyrightn = nasa_dict['copyright']
 
     embed=discord.Embed(title=theTitle, url=hdUrl, description=theDesc, color=0xfc0303)
     embed.set_author(name="Copyright: " + copyrightn)
