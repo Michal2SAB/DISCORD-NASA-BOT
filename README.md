@@ -1,6 +1,6 @@
 # A NASA Command Bot for Discord, written in python.
 
-Uses some of Nasa's public apis and more in near future. 
+A discord bot for pulling useful and fun info about NASA, space, mars and all the good stuff.
 
 # FEATURES FOR NOW
 
