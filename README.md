@@ -2,7 +2,7 @@
 
 A discord bot for pulling useful and fun info about NASA, space, mars and all the good stuff.
 
-# FEATURES FOR NOW
+# FEATURES SO FAR
 
 - Get the Astronomy Picture of The Day (with additional option to choose a random date or specify your own aswell)
 - Get random latest pictures of Mars, taken either by the Curiosity Rover or the Perseverance Rover.
