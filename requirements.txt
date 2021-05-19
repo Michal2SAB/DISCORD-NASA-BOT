@@ -2,3 +2,4 @@ discord.py
 python-twitter
 requests
 radar
+simplecalculator
