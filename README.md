@@ -8,3 +8,4 @@ A discord bot for anything space, planets etc related, using some of NASA open a
 - Get random latest pictures of Mars, taken either by the Curiosity Rover or the Perseverance Rover.
 - Get the latest mars weather reports from the Perseverance Rover, from "MarsWxReport" twitter account.
 - Get the latest ufo conspiracy theory video (from the popular channel secureteam10). Made this for my buddy.
+- Get the latest video of Perseverance & Curiosity capturing cool stuff on Mars (from the popular channel iGadgetPro).
