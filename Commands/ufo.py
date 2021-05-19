@@ -16,8 +16,8 @@ async def ufo(ctx):
         search_url = 'https://www.googleapis.com/youtube/v3/search?'
 
         url = search_url+f'key={apikey}&channelId={chnl}&part=snippet,id&order=date&maxResults=1'
-        inp = urllib.urlopen(url)
-        resp = json.load(inp)
+        visit = urllib.urlopen(url)
+        resp = json.load(visit)
         video_link = ""
 
         for i in resp['items']:
