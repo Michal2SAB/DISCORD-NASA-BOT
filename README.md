@@ -69,7 +69,7 @@ A discord bot for anything space, planets etc related, using some of NASA open a
   <summary>Bonus simple calculator</summary>
   
   #
-  - Easily calculate stuff with just one command.
+  - Easily calculate stuff with just one command, using 'simplecalculator' module.
   - Command example: !calc 2 + 2
   - Aliases: !calculate, !calculator
   #
