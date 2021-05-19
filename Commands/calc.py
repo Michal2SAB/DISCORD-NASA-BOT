@@ -17,6 +17,9 @@ async def calc(ctx, *, calculation):
 
         if second == '0':
             result = first
+            
+        if 'result' not in result:
+            result = "Math symbol not supported."
 
         await ctx.send(result.capitalize())
     except IndexError:
