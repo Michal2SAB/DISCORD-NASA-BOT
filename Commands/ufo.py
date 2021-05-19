@@ -9,7 +9,7 @@ import json
 @commands.command(aliases=['ufovid', 'ufonews'])
 async def ufo(ctx):
     try:
-        apikey = "" # your youtube data api v3
+        apikey = "" # your api key for youtube data api v3
         chnl = "UC4F3j3ed_To-M3H2YLLD5vw"
 
         video_url = 'https://www.youtube.com/watch?v='
