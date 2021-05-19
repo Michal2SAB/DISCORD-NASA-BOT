@@ -19,6 +19,8 @@ async def calc(ctx, *, calculation):
             result = first
 
         await ctx.send(result.capitalize())
+    except IndexError:
+        await ctx.send("Wrong arguments passed! Use numbers and math symbols only! Example: !calc 2 + 2")
     except Exception as e:
         print(e)
 
