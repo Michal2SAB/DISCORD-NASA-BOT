@@ -1,0 +1,33 @@
+# Importing some necessary modules
+import discord
+from discord.ext.commands import Bot
+from discord.ext import commands
+from discord.ext import *
+import urllib.request as urllib
+import json
+
+@commands.command(aliases=['ufovid', 'ufonews'])
+async def ufo(ctx):
+    try:
+        apikey = "" # your youtube data api v3
+        chnl = "UC4F3j3ed_To-M3H2YLLD5vw"
+
+        base_video_url = 'https://www.youtube.com/watch?v='
+        base_search_url = 'https://www.googleapis.com/youtube/v3/search?'
+
+        url = base_search_url+f'key={apikey}&channelId={chnl}&part=snippet,id&order=date&maxResults=1'
+        inp = urllib.urlopen(url)
+        resp = json.load(inp)
+        video_link = ""
+
+        for i in resp['items']:
+            if i['id']['kind'] == "youtube#video":
+                video_link = base_video_url + i['id']['videoId']
+
+        await ctx.send(video_link)
+
+    except Exception as e:
+        print(e)
+# Make the command load & work
+def setup(bot):
+    bot.add_command(ufo)
