@@ -5,36 +5,36 @@ A discord bot for anything space, planets etc related, using some of NASA open a
 # FEATURES SO FAR
 <details>
   <summary>Astronomy picture of the day</summary>
-  - Get the Astronomy picture of the day (with additional option to choose a random date or specify your own aswell).
-  - Command: !apod
-  - Aliases: !pic, !picture, !astropic
-  - Optional usages: !apod {date} / !apod random
+    - Get the Astronomy picture of the day (with additional option to choose a random date or specify your own aswell).
+    - Command: !apod
+    - Aliases: !pic, !picture, !astropic
+    - Optional usages: !apod {date} / !apod random
 </details>
 
 <details>
   <summary>Latest pictures from Mars</summary>
-  - Get random latest pictures of Mars, taken either by the Curiosity Rover or the Perseverance Rover, using the official NASA API.
-  - Command: !mars
-  - Aliases: !mpic, !marspic
+    - Get random latest pictures of Mars, taken either by the Curiosity Rover or the Perseverance Rover, using the official NASA API.
+    - Command: !mars
+    - Aliases: !mpic, !marspic
 </details>
 
 <details>
   <summary>Mars weather update</summary>
-  - Get the latest mars weather reports from the Perseverance Rover, from the "MarsWxReport" twitter account.
-  - Command: !marsweather
-  - Aliases: !mw, !mweather
+    - Get the latest mars weather reports from the Perseverance Rover, from the "MarsWxReport" twitter account.
+    - Command: !marsweather
+    - Aliases: !mw, !mweather
 </details>
 
 <details>
   <summary>UFO News (Conspiracy Theory)</summary>
-  - Get the latest ufo conspiracy theory video (from the popular channel secureteam10). Made this for my buddy.
-  - Command: !ufo
-  - Aliases: !ufovid, !ufonews
+    - Get the latest ufo conspiracy theory video (from the popular channel secureteam10). Made this for my buddy.
+    - Command: !ufo
+    - Aliases: !ufovid, !ufonews
 </details>
 
 <details>
   <summary>Latest captures by the Mars rovers</summary>
-  - Get the latest video from the popular channel "iGadgetPro" about Perseverance & Curiosity capturing cool stuff on Mars.
-  - Command: !marsvid
-  - Aliases: !mvid
+    - Get the latest video from the popular channel "iGadgetPro" about Perseverance & Curiosity capturing cool stuff on Mars.
+    - Command: !marsvid
+    - Aliases: !mvid
 </details>
