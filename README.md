@@ -5,7 +5,7 @@ A discord bot for anything space, planets etc related, using some of NASA open a
 # FEATURES SO FAR
 <details>
   <summary>Astronomy picture of the day</summary>
-    - Get the Astronomy picture of the day (with additional option to choose a random date or specify your own aswell).
+    - Get the Astronomy picture of the day (with additional option to choose a random date or specify your own aswell).<br>
     - Command: !apod
     - Aliases: !pic, !picture, !astropic
     - Optional usages: !apod {date} / !apod random
