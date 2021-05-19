@@ -64,3 +64,13 @@ A discord bot for anything space, planets etc related, using some of NASA open a
   - Aliases: !sn, !anton
   #
 </details>
+
+<details>
+  <summary>Bonus simple calculator</summary>
+  
+  #
+  - Easily calculate stuff with just one command.
+  - Command example: !calc 2 + 2
+  - Aliases: !calculate, !calculator
+  #
+</details>
