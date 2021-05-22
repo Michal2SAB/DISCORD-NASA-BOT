@@ -30,23 +30,26 @@ async def marsweather(ctx):
         latest_tweet = get_tweet("marswxreport")
         parts = latest_tweet.split(",")
 
-        title = parts[0] + "," + parts[1]
-        hTemp = parts[2][5:]
-        lTemp = parts[3][5:]
-        pressure = parts[4][9:]
-        daylight = parts[5][:-24]
-        daylight1 = daylight[9:].split("-")[0]
-        daylight2 = daylight[9:].split("-")[1]
-        imgLink = parts[5][27:]
+        if 'high' in parts:
+            title = parts[0] + "," + parts[1]
+            hTemp = parts[2][5:]
+            lTemp = parts[3][5:]
+            pressure = parts[4][9:]
+            daylight = parts[5][:-24]
+            daylight1 = daylight[9:].split("-")[0]
+            daylight2 = daylight[9:].split("-")[1]
+            imgLink = parts[5][27:]
 
-        embed=discord.Embed(title="Latest Weather Report From The Perseverance Rover", url=imgLink, description=title)
-        embed.set_author(name="MarsWxReport", url="https://twitter.com/MarsWxReport", icon_url="https://pbs.twimg.com/profile_images/2552209293/220px-Mars_atmosphere_400x400.jpg")
-        embed.add_field(name="Highest Temperature", value=hTemp, inline=True)
-        embed.add_field(name="Lowest Temperature", value=lTemp, inline=True)
-        embed.add_field(name="Pressure", value=pressure, inline=False)
-        embed.add_field(name="Daylight Time", value=daylight1 + " - " + daylight2, inline=False)
+            embed=discord.Embed(title="Latest Weather Report From The Perseverance Rover", url=imgLink, description=title)
+            embed.set_author(name="MarsWxReport", url="https://twitter.com/MarsWxReport", icon_url="https://pbs.twimg.com/profile_images/2552209293/220px-Mars_atmosphere_400x400.jpg")
+            embed.add_field(name="Highest Temperature", value=hTemp, inline=True)
+            embed.add_field(name="Lowest Temperature", value=lTemp, inline=True)
+            embed.add_field(name="Pressure", value=pressure, inline=False)
+            embed.add_field(name="Daylight Time", value=daylight1 + " - " + daylight2, inline=False)
         
-        await ctx.send(embed=embed)
+            await ctx.send(embed=embed)
+        else:
+            await ctx.send("No recent Mars weather updates")
     except Exception as e:
         print(e)
 
