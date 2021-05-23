@@ -30,7 +30,7 @@ async def marsweather(ctx):
         latest_tweet = get_tweet("marswxreport")
         parts = latest_tweet.split(",")
 
-        if 'high' in parts:
+        if any("high" in p for p in parts):
             title = parts[0] + "," + parts[1]
             hTemp = parts[2][5:]
             lTemp = parts[3][5:]
