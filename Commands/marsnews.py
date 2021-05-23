@@ -3,8 +3,6 @@ import discord
 from discord.ext.commands import Bot
 from discord.ext import commands
 from discord.ext import *
-from splinter import Browser
-from bs4 import BeautifulSoup
 from requests_html import AsyncHTMLSession
 
 @commands.command(aliases=['mn', 'mnews'])
