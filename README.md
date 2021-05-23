@@ -56,7 +56,7 @@ A discord bot for anything space, planets etc related, using some of NASA open a
 </details>
 
 <details>
-  <summary>Latest Mars news</summary>
+  <summary>Mars news</summary>
    
    #
    - Get the latest news about Mars from nasa news website.
