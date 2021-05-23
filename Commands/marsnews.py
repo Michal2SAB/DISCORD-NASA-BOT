@@ -23,9 +23,10 @@ async def marsnews(ctx):
         desc = news[0]
         title = news[1]
         date = news[2]
+        link = next(iter(getNews.absolute_links))
         nasaLogo = "https://github.com/Michal2SAB/DISCORD-NASA-BOT/blob/main/nlogo.png?raw=true"
         
-        embed=discord.Embed(title=title, description=desc)
+        embed=discord.Embed(title=title, description=desc, url=link)
         embed.set_author(name="NASA", url=url, icon_url=nasaLogo)
         embed.set_thumbnail(url=nasaLogo)
         embed.add_field(name="Date", value=date, inline=False)
