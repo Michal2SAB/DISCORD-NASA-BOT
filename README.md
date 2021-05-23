@@ -36,7 +36,7 @@ A discord bot for anything space, planets etc related, using some of NASA open a
 </details>
 
 <details>
-  <summary>UFO News (Conspiracy Theory)</summary>
+  <summary>UFO News (Conspiracy Theory Stuff)</summary>
   
   #
   - Get the latest ufo conspiracy theory video (from the popular channel 'secureteam10'). Made this for my buddy.
