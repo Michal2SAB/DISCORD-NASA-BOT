@@ -5,12 +5,17 @@ from discord.ext import commands
 from discord.ext import *
 import sys,twitter
 import json
+from configparser import ConfigParser
+
+config_object = ConfigParser()
+config_object.read("config.ini")
+keys = config_object["TWITTER"]
 
 # You need to create application on twitter developer portal to get these values (it's free)
-c_key = ''
-c_secret = ''
-a_token_key = ''
-a_token_secret = ''
+c_key = keys["consumer_key"]
+c_secret = keys["consumer_secret"]
+a_token_key = keys["access_token_key"]
+a_token_secret = keys["access_token_secret"]
 
 api = twitter.Api(
     consumer_key=c_key,
