@@ -6,7 +6,7 @@ config_object = ConfigParser()
 config_object.read("config.ini")
 yt = config_object["YOUTUBE"]
 
-key = yt["youtube_api_key"]
+key = yt["api_key"]
 
 def getVid(channel):
     try:
