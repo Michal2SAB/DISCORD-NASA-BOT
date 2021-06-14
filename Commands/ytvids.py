@@ -27,6 +27,6 @@ class YTvids(commands.Cog):
     async def ufo(self, ctx):
         await ctx.send(yt.getVid(self.ufo))
 
-# Load the command & make it work
+# Load the commands & make it work
 def setup(bot):
     bot.add_cog(YTvids(bot))
